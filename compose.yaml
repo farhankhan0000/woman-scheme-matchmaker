@@ -1,0 +1,56 @@
+
+name: scheme-matchmaker
+
+services:
+
+  db:
+    image: pgvector/pgvector:0.8.7-pg17-bookworm
+    container_name: wsm-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+    ports:
+      - "127.0.0.1:${POSTGRES_HOST_PORT:-5434}:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+
+    container_name: wsm-backend
+    restart: unless-stopped
+
+    env_file:
+      - ./.env
+
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+
+    ports:
+      - "127.0.0.1:8000:8000"
+
+    volumes:
+      - ./backend:/app
+
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
