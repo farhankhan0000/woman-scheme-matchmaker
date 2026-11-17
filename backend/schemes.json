@@ -1,0 +1,521 @@
+[{
+  "scheme_code": "MAHILA-COIR",
+  "title_en": "Mahila Coir Yojana (MCY)",
+  "ministry_or_dept": "Ministry of Micro, Small and Medium Enterprises (MSME) Coir Board",
+  "summary_en": "A women-exclusive self-employment scheme supporting rural women artisans in coir-producing regions with two months of training (₹1,000/month stipend) and a 75% subsidy (up to ₹7,500) to purchase motorised or electronic coir spinning equipment.",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 0,
+  "max_loan_amount": 15000,
+  "max_turnover_limit": null,
+  "allowed_sectors": ["Manufacturing", "Textiles", "Handicrafts", "Agriculture"],
+  "subsidy_percentage": 75.0,
+  "max_subsidy_cap": 7500,
+  "min_promoter_margin_pct": 25.0,
+  "interest_rate_pct": 0.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": [],
+  "embedding_text": "Mahila Coir Yojana supports rural women artisans in coir-producing regions through two months of skill training with a 1000 rupee monthly stipend and subsidised spinning equipment. Helps women start coir yarn, rope, mat, and coconut fibre businesses using motorised ratt, traditional ratt, or electronic ratt machines with 75 percent subsidy up to 7500 rupees (3200 rupees ceiling for select traditional/electronic ratts).",
+  "scheme_specific_fields": [
+    {
+      "name": "coir_artisan_status",
+      "label_en": "Are you a rural woman artisan involved in coir-related activities?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "training_status",
+      "label_en": "Have you completed the two-month Coir Board training programme?",
+      "type": "select",
+      "options": ["Completed", "Currently enrolled", "Not yet enrolled"],
+      "required": true
+    },
+    {
+      "name": "ratt_equipment_type",
+      "label_en": "Which coir spinning equipment do you need?",
+      "type": "select",
+      "options": [
+        "Motorised Ratt",
+        "Motorised Traditional Ratt",
+        "Electronic Ratt",
+        "Other Coir Processing Equipment"
+      ],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "AMSY-NSTFDC",
+  "title_en": "Adivasi Mahila Sashaktikaran Yojana (AMSY)",
+  "ministry_or_dept": "National Scheduled Tribes Finance and Development Corporation (NSTFDC), Ministry of Tribal Affairs",
+  "summary_en": "An exclusive concessional term-loan scheme for individual Scheduled Tribe women providing up to 90% financing for viable income-generating units costing up to ₹2 lakh (maximum loan ₹1.8 lakh), at 4% annual interest for loans up to ₹1 lakh (higher slab rates vary by State Channelising Agency).",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 0,
+  "max_loan_amount": 180000,
+  "max_turnover_limit": null,
+  "allowed_sectors": [
+    "Manufacturing",
+    "Services",
+    "Retail",
+    "Agriculture",
+    "Handicrafts",
+    "Textiles",
+    "Food Processing"
+  ],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 0,
+  "min_promoter_margin_pct": 0.0,
+  "interest_rate_pct": 4.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": ["ST_CERTIFICATE"],
+  "embedding_text": "Adivasi Mahila Sashaktikaran Yojana AMSY by NSTFDC provides concessional term loans exclusively to individual Scheduled Tribe women entrepreneurs through State Channelising Agencies. Supports self-employment and income-generating micro units such as tailoring, agriculture, retail shops, handicrafts, livestock, and small manufacturing up to 2 lakh project cost with 90 percent loan assistance (up to 1.8 lakh) and 4 percent interest for loans up to 1 lakh.",
+  "scheme_specific_fields": [
+    {
+      "name": "is_scheduled_tribe",
+      "label_en": "Do you belong to a recognised Scheduled Tribe (ST)?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "contacted_sca",
+      "label_en": "Have you contacted your State Channelising Agency (SCA)?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": false
+    }
+  ]
+},
+{
+  "scheme_code": "NEDFI-WOMEN",
+  "title_en": "NEDFI Loan for Women Entrepreneurs",
+  "ministry_or_dept": "North Eastern Development Finance Corporation Ltd. (NEDFi)",
+  "summary_en": "Provides term loans up to 75% of project cost (maximum loan ₹11.25 lakh on a ₹15 lakh maximum project cost) at up to 8% annual interest for skilled women entrepreneurs in North Eastern India, with up to 84 months repayment, 6 months moratorium, nil processing fee, and a 1% upfront fee.",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Sikkim",
+    "Tripura"
+  ],
+  "min_age": 18,
+  "max_age": 50,
+  "min_loan_amount": 0,
+  "max_loan_amount": 1125000,
+  "max_turnover_limit": null,
+  "allowed_sectors": [
+    "Manufacturing",
+    "Services",
+    "Textiles",
+    "Handicrafts",
+    "Agriculture",
+    "Retail",
+    "Food Processing"
+  ],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 0,
+  "min_promoter_margin_pct": 25.0,
+  "interest_rate_pct": 8.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": [],
+  "embedding_text": "NEDFI Loan for Women Entrepreneurs offers concessional term loans up to 11.25 lakh (75 percent of 15 lakh maximum project cost) at up to 8 percent interest for skilled women aged 18 to 50 in North East India. Covers new or existing MSMEs in handloom, handicraft, food processing, retail, agriculture, manufacturing, and services with 25 percent promoter margin, 84 months repayment, 6 months moratorium, nil processing fee, and 1 percent upfront fee.",
+  "scheme_specific_fields": [
+    {
+      "name": "business_stage",
+      "label_en": "Is this a new business or an existing enterprise?",
+      "type": "select",
+      "options": ["New MSME", "Existing MSME (Expansion / Modernisation)"],
+      "required": true
+    },
+    {
+      "name": "entity_constitution",
+      "label_en": "Business Legal Structure",
+      "type": "select",
+      "options": ["Sole Proprietorship", "Partnership Firm", "LLP", "Private Limited Company"],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "GEM-WOMANIYA",
+  "title_en": "Womaniya Initiative on Government e-Marketplace (GeM)",
+  "ministry_or_dept": "Ministry of Commerce and Industry / Government e-Marketplace (GeM)",
+  "summary_en": "A public procurement and digital market-access initiative enabling women-owned MSEs and women SHGs to sell products and services directly to government ministries and CPSEs under a 3% annual procurement target.",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 0,
+  "max_loan_amount": 0,
+  "max_turnover_limit": null,
+  "allowed_sectors": ["Manufacturing", "Services", "Handicrafts", "Textiles", "Food Processing", "Retail", "Agriculture"],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 0,
+  "min_promoter_margin_pct": 0.0,
+  "interest_rate_pct": 0.0,
+  "requires_udyam": true,
+  "requires_gst": false,
+  "other_registrations": ["GEM_SELLER_ACCOUNT"],
+  "embedding_text": "Womaniya on GeM is a government e-marketplace initiative helping women-owned micro and small enterprises and women SHGs sell goods and services directly to government buyers and public sector undertakings. Supports B2G e-commerce onboarding, product cataloguing, and participation in the 3 percent public procurement mandate without middlemen.",
+  "scheme_specific_fields": [
+    {
+      "name": "has_udyam_mse",
+      "label_en": "Is your enterprise registered as a women-owned MSE on Udyam?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "offering_type",
+      "label_en": "What do you plan to sell to government buyers?",
+      "type": "select",
+      "options": ["Manufactured Goods / Handicrafts", "Office / Commercial Supplies", "Services", "Both Products and Services"],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "DAY-NRLM-SHE-MARTS",
+  "title_en": "SHE-Marts (Self Help Entrepreneur Marts)",
+  "ministry_or_dept": "Ministry of Rural Development (DAY-NRLM)",
+  "summary_en": "Announced in Union Budget 2026–27 as community-owned retail outlets within Cluster Level Federations (CLFs) for rural women SHG enterprises; currently marked implementation pending (no funds sanctioned or open individual applications confirmed as of the 24 March 2026 PIB update).",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 0,
+  "max_loan_amount": 0,
+  "max_turnover_limit": null,
+  "allowed_sectors": [
+    "Retail",
+    "Handicrafts",
+    "Food Processing",
+    "Textiles",
+    "Manufacturing",
+    "Agriculture"
+  ],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 0,
+  "min_promoter_margin_pct": 0.0,
+  "interest_rate_pct": 0.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": [],
+  "embedding_text": "SHE-Marts Self Help Entrepreneur Marts under DAY-NRLM is an announced initiative with implementation pending, envisaged in Union Budget 2026-27 as community-owned retail outlets within Cluster Level Federations for rural women SHG entrepreneurs. Intended to help women artisans display and sell packaged foods, handlooms, and handicrafts directly to consumers once operational guidelines and local SRLM rollouts are notified.",
+  "scheme_specific_fields": [
+    {
+      "name": "shg_clf_linked",
+      "label_en": "Are you an active member of a DAY-NRLM SHG linked to a Cluster Level Federation (CLF)?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "retail_ready_products",
+      "label_en": "Do you have packaged or finished products ready for retail display once local rollout is announced?",
+      "type": "select",
+      "options": ["Yes", "In development"],
+      "required": true
+    },
+    {
+      "name": "local_srlm_rollout_confirmed",
+      "label_en": "Has your State Rural Livelihoods Mission (SRLM) or CLF notified local SHE-Mart rollout?",
+      "type": "select",
+      "options": ["Yes", "No / Not yet announced"],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "NCDC-NANDINI-SAHAKAR",
+  "title_en": "Nandini Sahakar",
+  "ministry_or_dept": "National Cooperative Development Corporation (NCDC), Ministry of Cooperation",
+  "summary_en": "An NCDC framework for women-led cooperatives (at least 50% women primary members) offering project finance (70:30 pattern for infrastructure; 80:20 debt-equity for new/innovative projects), business-plan handholding, and 2% interest subvention for new/innovative activities (1% for other activities), with project-cost bands of up to ₹1 crore (>3 months–1 year), up to ₹3 crore (1–3 years), and uncapped (>3 years).",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 0,
+  "max_loan_amount": 30000000,
+  "max_turnover_limit": null,
+  "allowed_sectors": [
+    "Agriculture",
+    "Food Processing",
+    "Manufacturing",
+    "Handicrafts",
+    "Textiles",
+    "Services",
+    "Retail"
+  ],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 0,
+  "min_promoter_margin_pct": 20.0,
+  "interest_rate_pct": 0.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": ["COOPERATIVE_SOCIETY_REGISTRATION"],
+  "embedding_text": "Nandini Sahakar by NCDC supports registered women cooperative societies with at least 50 percent women primary members across India (excluding urban housing). Project-cost bands are up to 1 crore for societies operating more than 3 months to under 1 year, up to 3 crore for 1 to 3 years, and uncapped over 3 years. Offers 70:30 infrastructure loans, 80:20 new/innovative financing, and 1 to 2 percent interest subvention.",
+  "scheme_specific_fields": [
+    {
+      "name": "is_registered_cooperative",
+      "label_en": "Are you applying on behalf of a registered cooperative society with at least 50% women primary members?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "cooperative_tenure",
+      "label_en": "How long has the cooperative society been operating?",
+      "type": "select",
+      "options": [
+        "Less than 3 months (Not yet eligible)",
+        "More than 3 months to less than 1 year (Up to ₹1 Crore band)",
+        "More than 1 year to less than 3 years (Up to ₹3 Crore band)",
+        "More than 3 years (No fixed project-cost ceiling)"
+      ],
+      "required": true
+    },
+    {
+      "name": "is_urban_housing",
+      "label_en": "Is this an urban housing project (excluded under Nandini Sahakar)?",
+      "type": "select",
+      "options": ["No", "Yes"],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "DAY-NRLM-SHG-CREDIT",
+  "title_en": "DAY-NRLM Women SHG Bank Credit and Interest Subvention",
+  "ministry_or_dept": "Ministry of Rural Development (DAY-NRLM)",
+  "summary_en": "A group-based bank linkage framework (where the rural women SHG is the principal borrower, not an individual direct applicant) providing collateral-free credit up to ₹20 lakh in corpus-linked repeat doses, with FY 2025–26 RBI interest subvention setting a 7% rate for loans up to ₹3 lakh and benchmark/10% cap for ₹3–5 lakh (confirm FY 2026–27 terms with the bank).",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 0,
+  "max_loan_amount": 2000000,
+  "max_turnover_limit": null,
+  "allowed_sectors": [
+    "Agriculture",
+    "Manufacturing",
+    "Services",
+    "Handicrafts",
+    "Textiles",
+    "Food Processing",
+    "Retail"
+  ],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 0,
+  "min_promoter_margin_pct": 0.0,
+  "interest_rate_pct": 7.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": ["DAY_NRLM_SHG_REGISTRATION"],
+  "embedding_text": "DAY-NRLM Women SHG Bank Credit is a group-based framework where rural women Self-Help Groups are the principal borrowers, not individual applicants. Provides collateral-free loans up to 20 lakh (no margin up to 10 lakh) in repeat doses based on corpus and Micro Credit Plan. Under FY 2025-26 RBI norms, loans up to 3 lakh carry 7 percent interest and 3 to 5 lakh are capped at benchmark or 10 percent (verify FY 2026-27 rates).",
+  "scheme_specific_fields": [
+    {
+      "name": "shg_membership_status",
+      "label_en": "Are you applying through an active rural women SHG under DAY-NRLM (SHG is the principal borrower)?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "shg_credit_dose",
+      "label_en": "Which credit dose is your SHG applying for?",
+      "type": "select",
+      "options": [
+        "First Dose (6x corpus or min ₹1.5 Lakh, whichever is higher)",
+        "Second Dose (8x corpus or min ₹3 Lakh, whichever is higher)",
+        "Third Dose (Min ₹6 Lakh based on Micro Credit Plan & credit history)",
+        "Fourth Dose or Above (Above ₹6 Lakh based on Micro Credit Plan & repayment history)"
+      ],
+      "required": true
+    },
+    {
+      "name": "panchasutra_compliance",
+      "label_en": "Does your SHG maintain Panchasutras (regular meetings, savings, inter-loaning, timely repayment, and updated books)?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "PM-VISHWAKARMA",
+  "title_en": "PM Vishwakarma",
+  "ministry_or_dept": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+  "summary_en": "Supports traditional artisans and craftspeople across 18 notified trades with a ₹15,000 toolkit e-voucher, skill training (₹500/day stipend), and collateral-free loans up to ₹3 lakh at a 5% interest rate.",
+  "target_gender": "All",
+  "has_women_carve_out": false,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 10000,
+  "max_loan_amount": 300000,
+  "max_turnover_limit": null,
+  "allowed_sectors": ["Handicrafts", "Manufacturing", "Textiles", "Services"],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 15000,
+  "min_promoter_margin_pct": 0.0,
+  "interest_rate_pct": 5.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": [],
+  "embedding_text": "PM Vishwakarma supports self-employed traditional artisans and women craftspeople in 18 trades including tailoring, pottery, basket and mat weaving, coir weaving, doll making, garland making, goldsmithing, carpentry, and cobbling. Offers 15000 rupee toolkit voucher, 500 rupee daily training stipend, and collateral-free loans up to 3 lakh at 5 percent interest.",
+  "scheme_specific_fields": [
+    {
+      "name": "notified_trade",
+      "label_en": "Which of the 18 notified traditional trades do you practise?",
+      "type": "select",
+      "options": [
+        "Tailor (Darzi)",
+        "Basket / Mat / Broom Maker / Coir Weaver",
+        "Potter (Kumhaar)",
+        "Doll & Toy Maker",
+        "Garland Maker (Malakaar)",
+        "Goldsmith (Sonar)",
+        "Cobbler / Footwear Artisan",
+        "Carpenter / Boat Maker / Blacksmith / Mason / Other Notified Trade"
+      ],
+      "required": true
+    },
+    {
+      "name": "family_registration_check",
+      "label_en": "Has any other member of your family already registered under PM Vishwakarma?",
+      "type": "select",
+      "options": ["No", "Yes"],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "PMEGP-CENTRAL",
+  "title_en": "Prime Minister's Employment Generation Programme (PMEGP)",
+  "ministry_or_dept": "Ministry of Micro, Small and Medium Enterprises (MSME) / KVIC",
+  "summary_en": "A credit-linked margin-money subsidy programme for setting up eligible new non-farm micro-enterprises (up to ₹50 lakh project cost for manufacturing and ₹20 lakh for business/services), offering women special-category subsidies of 35% (rural) or 25% (urban) routed through the lending bank with 5% own contribution and bank-specific interest rates.",
+  "target_gender": "All",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 0,
+  "max_loan_amount": 5000000,
+  "max_turnover_limit": null,
+  "allowed_sectors": [
+    "Manufacturing",
+    "Services",
+    "Food Processing",
+    "Textiles",
+    "Handicrafts",
+    "Retail"
+  ],
+  "subsidy_percentage": 35.0,
+  "max_subsidy_cap": 1750000,
+  "min_promoter_margin_pct": 5.0,
+  "interest_rate_pct": 0.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": [],
+  "embedding_text": "PMEGP Prime Minister Employment Generation Programme provides bank-routed margin-money subsidies for setting up new non-farm micro-enterprises (existing units excluded from normal first loans). Women receive 35 percent subsidy in rural areas and 25 percent in urban areas with 5 percent own contribution, on project-cost ceilings of 50 lakh for manufacturing and 20 lakh for business or services, at bank-applicable interest rates.",
+  "scheme_specific_fields": [
+    {
+      "name": "is_new_enterprise",
+      "label_en": "Are you setting up a new enterprise (existing units are not eligible for normal PMEGP first-loan assistance)?",
+      "type": "select",
+      "options": ["Yes (New Unit)", "No (Existing Unit)"],
+      "required": true
+    },
+    {
+      "name": "unit_location_type",
+      "label_en": "Will your new enterprise be located in a Rural or Urban area?",
+      "type": "select",
+      "options": ["Rural (35% Women Subsidy)", "Urban (25% Women Subsidy)"],
+      "required": true
+    },
+    {
+      "name": "enterprise_category",
+      "label_en": "What is your enterprise sector category and maximum project-cost ceiling?",
+      "type": "select",
+      "options": [
+        "Manufacturing (Max ₹50 Lakh Project Cost)",
+        "Business / Services (Max ₹20 Lakh Project Cost)"
+      ],
+      "required": true
+    },
+    {
+      "name": "class_8_pass",
+      "label_en": "Have you passed at least Class VIII (mandatory for manufacturing projects above ₹10 lakh or business/service projects above ₹5 lakh)?",
+      "type": "select",
+      "options": ["Yes", "No", "Not Applicable (Project cost within threshold)"],
+      "required": true
+    },
+    {
+      "name": "family_pmegp_check",
+      "label_en": "Has any other member of your family already received PMEGP assistance?",
+      "type": "select",
+      "options": ["No", "Yes"],
+      "required": true
+    }
+  ]
+},
+{
+  "scheme_code": "NBCFDC-NEW-SWARNIMA",
+  "title_en": "New Swarnima Scheme for Women",
+  "ministry_or_dept": "National Backward Classes Finance and Development Corporation (NBCFDC)",
+  "summary_en": "Provides concessional term loans up to ₹2 lakh at 5% annual interest with zero beneficiary margin requirement for individual women from notified Backward Classes with annual family income up to ₹3 lakh.",
+  "target_gender": "Female",
+  "has_women_carve_out": true,
+  "eligible_states": ["ALL"],
+  "min_age": 18,
+  "max_age": 65,
+  "min_loan_amount": 10000,
+  "max_loan_amount": 200000,
+  "max_turnover_limit": null,
+  "allowed_sectors": ["Manufacturing", "Services", "Retail", "Handicrafts", "Textiles", "Food Processing", "Agriculture"],
+  "subsidy_percentage": 0.0,
+  "max_subsidy_cap": 0,
+  "min_promoter_margin_pct": 0.0,
+  "interest_rate_pct": 5.0,
+  "requires_udyam": false,
+  "requires_gst": false,
+  "other_registrations": ["OBC_CASTE_CERTIFICATE", "INCOME_CERTIFICATE"],
+  "embedding_text": "New Swarnima Scheme for Women by NBCFDC offers concessional term loans up to 2 lakh at 5 percent annual interest with zero own contribution for Backward Class OBC women entrepreneurs. Supports self-employment ventures such as tailoring, beauty parlours, retail shops, food stalls, handicrafts, and small service businesses for families earning under 3 lakh.",
+  "scheme_specific_fields": [
+    {
+      "name": "is_notified_bc",
+      "label_en": "Do you belong to a Central or State notified Backward Class (OBC)?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "annual_family_income_under_3l",
+      "label_en": "Is your total annual family income ₹3 lakh or below?",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "required": true
+    }
+  ]
+}]
