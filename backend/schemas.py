@@ -32,14 +32,14 @@ class UserInfo(BaseModel):
 
     state_or_ut: IndianStateOrUT = Field(description="Applicant's State or Union Territory")
     residential_address: str=Field(description="Applicant's Home address")
-    residential_pincode: int=Field(description="Applicant's Home pin code")
+    residential_pincode: str=Field(description="Applicant's Home pin code")
     is_business_address_same: bool = Field(
         default=True,
         description="True if operating from home, False if separate location"
     )
     district: str=Field(description="Required for the DPR")
     business_address: str=Field(description="Physical location of the enterprise")
-    business_pincode: int=Field(description="pin code of the location of the enterprise")
+    business_pincode: str=Field(description="pin code of the location of the enterprise")
 
     business_sector: MasterBusinessSector = Field(..., description="Used for SQL filtering (allowed_sectors)")
     is_new_business: bool = Field(..., description="True if setting up, False if upgrading")

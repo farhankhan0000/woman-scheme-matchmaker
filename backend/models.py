@@ -11,7 +11,7 @@ class Schemes(Base):
     summary_en = Column(String, nullable=False)
     target_gender = Column(String, nullable=False)
     has_women_carve_out = Column(Boolean, nullable=False)
-    eligible_status = Column(ARRAY(String), nullable=False, default=list)
+    eligible_states = Column(ARRAY(String), nullable=False, default=list)
     min_age = Column(Integer, nullable=False)
     max_age = Column(Integer, nullable=False)
     min_loan_amount = Column(Integer, nullable=False)
