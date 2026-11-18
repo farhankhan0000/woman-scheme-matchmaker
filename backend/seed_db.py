@@ -2,6 +2,7 @@ import json
 from sqlalchemy.orm import Session
 from database import engine,Base
 from models import Schemes
+from ai import get_embedding
 
 Base.metadata.create_all(bind=engine)
 
@@ -18,10 +19,10 @@ def seed_database():
             if exists:
                 print(f"Skipping {data['scheme_code']} - Already exists in the table")
                 continue
-            placeholder_vector = [0.0] * 768
+            embedding = get_embedding(data["embedding_text"])
 
             new_scheme = Schemes(
-                schemes_code = data["scheme_code"],
+                scheme_code = data["scheme_code"],
                 title_en = data["title_en"],
                 summary_en = data["summary_en"],
                 target_gender = data["target_gender"],
@@ -41,7 +42,7 @@ def seed_database():
                 other_registrations=data["other_registrations"],
                 embedding_text=data["embedding_text"],
                 scheme_specific_fields=data["scheme_specific_fields"],
-                embedding=placeholder_vector
+                embedding=embedding
             )
             session.add(new_scheme)
 
