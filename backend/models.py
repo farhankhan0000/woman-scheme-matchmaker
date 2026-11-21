@@ -1,5 +1,7 @@
+from typing import Optional
+
 from database import Base
-from sqlalchemy import Column, Integer, String, Boolean, Float, Text, ARRAY
+from sqlalchemy import Column, Integer, String, Boolean, Float, Text, ARRAY, true
 from sqlalchemy.dialects.postgresql import JSONB
 from pgvector.sqlalchemy import Vector
 
@@ -27,3 +29,16 @@ class Schemes(Base):
     embedding_text = Column(String, nullable=False)
     scheme_specific_fields = Column(JSONB, nullable=False)
     embedding = Column(Vector(768))
+
+class AgentState(Base):
+    __tablename__="agent_state"
+    id=Column(Integer, primary_key=True,nullable=False,unique=True)
+    business_idea=Column(String, nullable=True)
+    business_stage=Column(String, nullable=True)
+    state=Column(String, nullable=False)
+    social_category=Column(String, nullable=False)
+    funding_needed=Column(Integer, nullable=False)
+    gender=Column(String, default="female", nullable=False)
+
+
+
