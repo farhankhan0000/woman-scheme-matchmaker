@@ -4,26 +4,61 @@ import os
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from tavily import TavilyClient
+
 
 load_dotenv()
 
 client = genai.Client()
+tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+
+def web_search(query:str) -> list[dict]:
+    """
+    Search the live web for current Indian government scheme deadlines,
+    application portal URLs, or schemes not found in the local database.
+
+    Args:
+        query: Specific search query(e.g. "Mukhyamantri Mahila Udyami Yojana Bihar 2026 last date").
+    """
+    try:
+        response = tavily.search(
+            query=query,
+            search_depth="advanced",
+            max_results=5,
+            include_domains=["gov.in", "nic.in","jansamarth.in","sidbi.in",
+                             "udyamimitra.in","standupmitra.in","mudra.org.in","cgtmse.in","nabard.org","rbi.org.in","nsdcindia.org"]
+        )
+        results=[]
+        raw_results = response.get("results", [])
+        for r in raw_results:
+            item = {
+                "title" : r["title"],
+                "url": r["url"],
+                "content": r["content"],
+            }
+            results.append(item)
+        return results
+    except Exception as e:
+        return [{"error": str(e)}]
+
 
 SystemPrompt = ("You are an Indian Government Scheme finder for the Rural, Semi Urban and Urban Women Entrepreneur"
                 "Follow the rules and then give the output user want"
                 "1. Keep asking the important relevant questions to solve the user's query"
+                "2. Always call web_search when the user asks for current 2026 application status, deadlines, or official portal URLs."
                 )
 
 
 
 def model_reply(prompt: str) -> str:
-    response = client.models.generate_content(
+    chat = client.chats.create(
         model="gemini-3.5-flash",
-        contents=prompt,
         config=types.GenerateContentConfig(
-            system_instruction=SystemPrompt
+            system_instruction=SystemPrompt,
+            tools=[web_search]
         )
     )
+    response = chat.send_message(prompt)
     return response.text
 
 print(model_reply("Hey, I am a 32-year-old woman living in a semi-urban town (nagarpalika area) near Muzaffarpur, Bihar. There are 3 more women with me—we are 4 women in total, aged between 26 and 38. All four of us live in the same town in Bihar, and we want to start a brand-new food processing business together, mainly making packaged spices (masala), homemade pickles, and roasted millet snacks to sell locally and in nearby cities."

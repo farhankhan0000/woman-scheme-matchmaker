@@ -1,5 +1,8 @@
+from operator import index
+from typing import Optional
+
 from database import Base
-from sqlalchemy import Column, Integer, String, Boolean, Float, Text, ARRAY
+from sqlalchemy import Column, Integer, String, Boolean, Float, Text, ARRAY, ForeignKey
 from sqlalchemy.dialects.postgresql import JSONB
 from pgvector.sqlalchemy import Vector
 
@@ -27,3 +30,37 @@ class Schemes(Base):
     embedding_text = Column(String, nullable=False)
     scheme_specific_fields = Column(JSONB, nullable=False)
     embedding = Column(Vector(768))
+
+class AgentState(Base):
+    __tablename__="agent_state"
+    id=Column(Integer, primary_key=True,nullable=False,unique=True)
+    conversation_id=Column(Integer,ForeignKey("conversation.id", ondelete="CASCADE"),unique=True,nullable=False)
+    business_idea=Column(String, nullable=True)
+    business_stage=Column(String, nullable=True)
+    state=Column(String, nullable=True)
+    social_category=Column(String, nullable=True)
+    funding_needed=Column(Integer, nullable=True)
+    gender=Column(String, default="female", nullable=False)
+
+class User(Base):
+    __tablename__="user_login_info"
+    id=Column(Integer, primary_key=True,nullable=False,unique=True)
+    name=Column(String, nullable=False)
+    username=Column(String, nullable=False, unique=True)
+    password=Column(String, nullable=False)
+
+class Conversation(Base):
+    __tablename__="conversation"
+    id=Column(Integer, primary_key=True,nullable=False,unique=True)
+    user_id=Column(Integer, ForeignKey("user_login_info.id", ondelete="CASCADE"), nullable=False, index=True)
+    title=Column(String,default="New Chat", nullable=False)
+
+class Messages(Base):
+    __tablename__="messages"
+    id=Column(Integer, primary_key=True, nullable=False, unique=True)
+    conversation_id=Column(Integer, ForeignKey("conversation.id", ondelete="CASCADE"), nullable=False, index=True)
+    role=Column(String, nullable=False)
+    content=Column(Text,nullable=False)
+
+
+
