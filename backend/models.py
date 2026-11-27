@@ -1,7 +1,5 @@
-from operator import index
-from typing import Optional
 
-from database import Base
+from backend.database import Base
 from sqlalchemy import Column, Integer, String, Boolean, Float, Text, ARRAY, ForeignKey
 from sqlalchemy.dialects.postgresql import JSONB
 from pgvector.sqlalchemy import Vector
@@ -46,7 +44,7 @@ class User(Base):
     __tablename__="user_login_info"
     id=Column(Integer, primary_key=True,nullable=False,unique=True)
     name=Column(String, nullable=False)
-    username=Column(String, nullable=False, unique=True)
+    user_name=Column(String, nullable=False, unique=True)
     password=Column(String, nullable=False)
 
 class Conversation(Base):
